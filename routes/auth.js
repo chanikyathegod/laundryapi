@@ -15,7 +15,7 @@ const { error } = registerValidation(req.body);
 
 
 
-if(error) return res.status(400).send(error)
+if(error) return res.status(400).json({ error: error.details[0].message }
 
 //checking if user is already registered
 
