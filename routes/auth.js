@@ -22,7 +22,7 @@ if(error) return res.status(400).send(error)
 const emialexist = await User.findOne({ email: req.body.email});
 
 
-if(emialexist) return res.status(400).send('email already exits');
+if(emialexist) return res.status(400).json({ error: 'already exits' });
 
 
 //hashthe passsword
