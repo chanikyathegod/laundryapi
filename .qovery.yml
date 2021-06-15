@@ -1,0 +1,11 @@
+---
+application:
+  name: "laundryapi"
+  project: "tss"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-laundryapi"
+  routes:
+  - application_name: "laundryapi"
+    paths:
+    - "/*"
